@@ -136,12 +136,3 @@ fun Details(movie: Movie) {
         }
     }
 }
-
-
-
-
-
-
-
-
-

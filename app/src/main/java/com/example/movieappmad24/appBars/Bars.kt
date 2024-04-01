@@ -19,7 +19,7 @@ import com.example.movieappmad24.navigation.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopAppBar( //comes into a seperate package later
+fun TopAppBar(
     title: String,
     navigationIcon: ImageVector? = null,
     onNavigationIconClick: (() -> Unit)? = null
