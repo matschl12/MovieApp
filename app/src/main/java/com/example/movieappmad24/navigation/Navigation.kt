@@ -7,6 +7,7 @@ import androidx.navigation.navArgument
 import com.example.movieappmad24.screens.HomeScreen
 import com.example.movieappmad24.screens.DetailScreen
 import com.example.movieappmad24.navigation.Screen
+import com.example.movieappmad24.screens.WatchlistScreen
 
 @Composable
 fun Navigation(){
@@ -22,6 +23,9 @@ fun Navigation(){
         ){
             backStackEntry ->
             DetailScreen(movieId = backStackEntry.arguments?.getString("movieId"), navController = navController)
+        }
+        composable(route = Screen.WatchlistScreen.route){
+            WatchlistScreen(navController = navController)
         }
     }
 
