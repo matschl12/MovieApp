@@ -49,7 +49,7 @@ fun TopAppBar(
 fun BottomAppBar(navController: NavController) {
 
     NavigationBar {
-        NavigationBarItem(selected = false, onClick = { navController.navigate(Screen.HomeScreen.route) }, icon = { Icon(
+        NavigationBarItem(selected = false, onClick = { navController.popBackStack() }, icon = { Icon(
             Icons.Filled.Home, contentDescription = "home") } )
         NavigationBarItem(selected = false, onClick = { navController.navigate(Screen.WatchlistScreen.route) }, icon = { Icon(
             Icons.Filled.Star, contentDescription = "watchlist") })
