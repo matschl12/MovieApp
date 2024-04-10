@@ -10,12 +10,13 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
+import com.example.movieappmad24.ViewModels.MoviesViewModel
 import com.example.movieappmad24.appBars.BottomAppBar
 import com.example.movieappmad24.models.getMovies
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun WatchlistScreen(navController: NavController)
+fun WatchlistScreen(navController: NavController, moviesViewModel: MoviesViewModel)
 {
     Scaffold (
         topBar = {

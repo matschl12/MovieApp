@@ -31,8 +31,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
+import androidx.lifecycle.ViewModel
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.example.movieappmad24.ViewModels.MoviesViewModel
 import com.example.movieappmad24.appBars.BottomAppBar
 import com.example.movieappmad24.models.Movie
 import com.example.movieappmad24.models.getMovies
@@ -41,7 +43,7 @@ import com.example.movieappmad24.navigation.Screen
 @OptIn(ExperimentalMaterial3Api::class)
 
 @Composable
-fun HomeScreen(navController: NavController) {
+fun HomeScreen(navController: NavController, moviesViewModel: MoviesViewModel) {
     Scaffold (
         topBar = {
             CenterAlignedTopAppBar(

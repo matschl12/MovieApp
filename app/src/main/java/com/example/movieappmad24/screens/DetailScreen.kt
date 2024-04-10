@@ -31,6 +31,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import coil.compose.AsyncImage
+import com.example.movieappmad24.ViewModels.MoviesViewModel
 import com.example.movieappmad24.appBars.BottomAppBar
 import com.example.movieappmad24.models.Movie
 import com.example.movieappmad24.models.getMovies
@@ -38,7 +39,7 @@ import com.example.movieappmad24.appBars.TopAppBar
 
 
 @Composable
-fun DetailScreen(movieId: String?, navController: NavHostController) {
+fun DetailScreen(movieId: String?, navController: NavHostController, moviesViewModel: MoviesViewModel) {
     val clickedMovie = getMovies().find { it.id == movieId }
     Scaffold(
         topBar = {
